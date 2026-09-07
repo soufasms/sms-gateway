@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      SANDBOX
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SBU Admin" />
+    <meta name="author" content="SBU" />
+    <meta name="csrf-token" content="" />
+    <!-- styles -->
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/jquery.jqplot.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/prettify.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/styles.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/styles2.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/icons-sprite.css" rel="stylesheet" />
+    <link id="themes" href="https://fintech-sbx.posindonesia.co.id/assets/css/themes.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/chosen_v1.8.7/chosen.min.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/news/jquery-ui-1.14.0/jquery-ui.min.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/js/filemanager/data/styles_filemanager.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <meta charset="utf-8" />
+    <title>
+      SANDBOX
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SBU Admin" />
+    <meta name="author" content="SBU" />
+    <meta name="csrf-token" content="" />
+    <!-- styles -->
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/jquery.jqplot.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/prettify.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/styles.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/styles2.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/icons-sprite.css" rel="stylesheet" />
+    <link id="themes" href="https://fintech-sbx.posindonesia.co.id/assets/css/themes.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/css/chosen_v1.8.7/chosen.min.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/news/jquery-ui-1.14.0/jquery-ui.min.css" rel="stylesheet" />
+    <link href="https://fintech-sbx.posindonesia.co.id/assets/js/filemanager/data/styles_filemanager.css" rel="stylesheet" type="text/css" />
+    <div id="main-content">
+      <div class="container">
+        <div align="center">
+          <img src="assets/img/posindonesia.png" height="80" alt="Logo" />
+          <h1>
+            Sandbox Fintech SBU Digital Platform
+          </h1>
+          <!--<img src="https://fintech-sbx.posindonesia.co.id/assets/img/logo6.png" width="60%" height="40%" alt="Logo">-->
+        </div>
+      </div>
+      <div class="container">
+        <ul class="breadcrumb">
+        </ul>
+        <div id="LoadingImage" class="centered" style="display: none">
+          <img src="assets/img/ajax-loader.gif" />
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="box-tab">
+              <div class="tabbable">
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a href="#tab1" data-toggle="tab">                    <i class="black-icons info_about"></i>
+                    Overview
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab2" data-toggle="tab">                    <i class="black-icons v_card"></i>
+                    Authentication
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab3" data-toggle="tab">                    <i class="black-icons link"></i>
+                    API Parameter
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab4" data-toggle="tab">                    <i class="black-icons link_2"></i>
+                    API Services
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab5" data-toggle="tab">                    <i class="black-icons locked"></i>
+                    Errors
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab6" data-toggle="tab">                    <i class="black-icons archive"></i>
+                    Data Dummy
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab7" data-toggle="tab">                    <i class="black-icons note_book"></i>
+                    Daftar Produk
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab10" data-toggle="tab">                    <i class="black-icons create_write"></i>
+                    Test API
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab8" data-toggle="tab">                    <i class="black-icons download"></i>
+                    Download
+</a>
+                  </li>
+                  <li>
+                    <a href="#tab9" data-toggle="tab">                    <i class="black-icons address_book"></i>
+                    Contact
+</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab1">
+                    <h4>
+                      Berikut Overview dari Fintech SBU Giro MPospay Sandbox APIs:
+                    </h4>
+                    <br />
+                    <div class="widget-block">
+                      <div class="widget-head">
+                      </div>
+                      <div class="widget-content">
+                        <div class="widget-box">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Method
+                                </th>
+                                <th>
+                                  EndPoint
+                                </th>
+                                <th>
+                                  Usage
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  POST
+                                </td>
+                                <td>
+                                  http://103.123.39.238:7879/finsbu/h2h
+                                </td>
+                                <td>
+                                  API B2B Messaging
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  POST
+                                </td>
+                                <td>
+                                  http://103.123.39.238:8772/finsbu/h2h
+                                </td>
+                                <td>
+                                  API B2B Messaging
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Silahkan coba APIs kami menggunakan Sandbox. Kami menyediakan sandbox dengan data dummy dan static.
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="tab2">
+                    <h4>
+                      HTTP Method
+                    </h4>
+                    <ul class="pin_icn">
+                      <li>
+                        HTTP Method yang digunakan adalah POST.
+                      </li>
+                      <li>
+                        HTTP Method harus dikirim dengan huruf capital.
+                      </li>
+                    </ul>
+                    <h4>
+                      User Agent
+                    </h4>
+                    <p>
+                      Settingan USER AGENT untuk client yang mengakses APIs webservice di set (case sensitive) :
+                      <font size="3">
+                        <b>                        FinSBUGiroMPospay-B2B
+</b>
+                      </font>
+                    </p>
+                    <h4>
+                      Headers
+                    </h4>
+                    <p>
+                      Agar komunikasi berhasil dengan APIs Fintech SBU Giro MPospay, anda harus mengirim beberapa headers di setiap request API :
+                    </p>
+                    <br />
+                    <div class="widget-block">
+                      <div class="widget-head">
+                      </div>
+                      <div class="widget-content">
+                        <div class="widget-box">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Name
+                                </th>
+                                <th>
+                                  Type
+                                </th>
+                                <th>
+                                  Description
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  Authorization
+                                </td>
+                                <td>
+                                  Alphanumeric
+                                </td>
+                                <td>
+                                  Basic Base64(client_id:client_secret)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Content-Type
+                                </td>
+                                <td>
+                                  Alphanumeric
+                                </td>
+                                <td>
+                                  (application/json)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Origin
+                                </td>
+                                <td>
+                                  Url
+                                </td>
+                                <td>
+                                  Origin domain e.g. yourdomain.com)
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <h4>
+                      Signature
+                    </h4>
+                    <p>
+                      Signature digunakan oleh APIs Fintech SBU Giro MPospay untuk menjamin bahwa pesan yang ada kirim tidak diubah oleh yang tidak berhak.
+									Pembuatan signature menggunakan enkripsi hashing MD5.
+									Garis besar proses pembuatan Signature adalah sebagai berikut:
+                    </p>
+                    <ol class=" decimal_order">
+                      <li>
+                        Ambil nilai dari field type (ex : inquiry, payment, purchase etc..).
+                      </li>
+                      <li>
+                        Ambil nilai dari field account (ex : 0000000018).
+                      </li>
+                      <li>
+                        Ambil nilai dari field institutionCode (ex : 180309000002).
+                      </li>
+                      <li>
+                        Ambil nilai dari field product (ex : 2042).
+                      </li>
+                      <li>
+                        Ambil nilai dari field billNumber (ex : AF085713323054).
+                      </li>
+                      <li>
+                        Ambil nilai dari field trxId (ex : 00000001).
+                      </li>
+                      <li>
+                        Ambil parameter password APIs yang dibarikan oleh Fintech SBU Giro MPospay (ex : aad16aabac2b3d4e17f04a95e2a2372f).
+                      </li>
+                      <li>
+                        Ambil nilai current date, dengan format : yyyy-mm-dd (ex : 2018-03-22&#39;).
+                      </li>
+                      <li>
+                        Ambil parameter KEY APIs yang dibarikan oleh Fintech SBU Giro MPospay (ex : f1ntechSBU@2018#).
+                      </li>
+                      <li>
+                        Gabungkan semua parameter diatas kemudian lakukan enkripsi dengan hashing MD5.
+                      </li>
+                    </ol>
+                    <p>
+                      Contoh Message :
+                    </p>
+                    <div class="code_syn">
+                      <pre class="prettyprint linenums">
+                        {
+	&#34;type&#34;:&#34;inquiry&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;2042&#34;, 
+	&#34;billNumber&#34;:&#34;AF085713323054&#34;,
+	&#34;trxId&#34;:&#34;00000001&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;sign&#34;:&#34;b3847e3a099979c1d96e3d186e0e05fa&#34;
+}
+                      </pre>
+                    </div>
+                    <blockquote class="quote_blue">
+                      <p>
+                        Formula 			= md5(type+account+institutionCode+product+billNumber+trxId+password+current_date+key)
+                        <br />
+                        StringToSign 	= inquiry+0000000018+180309000002+2042+AF085713323054+00000001+aad16aabac2b3d4e17f04a95e2a2372f+2018-03-22+f1ntechSBU@2018#
+                        <br />
+                        StringToSign 	= MD5(inquiry00000000181803090000022042AF08571332305400000001aad16aabac2b3d4e17f04a95e2a2372f2018-03-22f1ntechSBU@2018#)
+                        <br />
+                        Hasil 				= b3847e3a099979c1d96e3d186e0e05fa
+                      </p>
+                    </blockquote>
+                  </div>
+                  <div class="tab-pane" id="tab3">
+                    <h3>
+                      Berikut beberapa parameter yang harus anda kirim untuk API B2B :
+                    </h3>
+                    <h4>
+                      Request
+                    </h4>
+                    <div class="widget-block">
+                      <div class="widget-head">
+                      </div>
+                      <div class="widget-content">
+                        <div class="widget-box">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Field
+                                </th>
+                                <th>
+                                  Data Field
+                                </th>
+                                <th>
+                                  Mandatory
+                                </th>
+                                <th>
+                                  Description
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  Type
+                                </td>
+                                <td>
+                                  String(12)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Tipe API Service
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  accountType
+                                </td>
+                                <td>
+                                  String(6)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Tipe Account. Default B2B
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  account
+                                </td>
+                                <td>
+                                  String(10)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Account Giro Mpospay. Format : Number, 10
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  institutionCode
+                                </td>
+                                <td>
+                                  String(12)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Account
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  product
+                                </td>
+                                <td>
+                                  String(5)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Account Giro Mpospay. Format : Number, 4
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  billNumber
+                                </td>
+                                <td>
+                                  String(1500)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Nomor pelanggan, nomor handphone atau nomor billing
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  trxId
+                                </td>
+                                <td>
+                                  String(8)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Nomor urut trasnaksi. Format : Number, 8
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  retrieval
+                                </td>
+                                <td>
+                                  String(17)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Waktu transaksi, format : yyyymmddhhiisszzz
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  sign
+                                </td>
+                                <td>
+                                  String(32)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Signature, MD5(type+account+institutionCode+product+billNumber+trxId+password+current_date+key)
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <h4>
+                      Respon
+                    </h4>
+                    <div class="widget-block">
+                      <div class="widget-head">
+                      </div>
+                      <div class="widget-content">
+                        <div class="widget-box">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Field
+                                </th>
+                                <th>
+                                  Data Field
+                                </th>
+                                <th>
+                                  Mandatory
+                                </th>
+                                <th>
+                                  Description
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  Type
+                                </td>
+                                <td>
+                                  String(12)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Tipe API Service
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  accountType
+                                </td>
+                                <td>
+                                  String(6)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Tipe Account. Default B2B
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  account
+                                </td>
+                                <td>
+                                  String(10)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Account Giro Mpospay. Format : Number, 10
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  institutionCode
+                                </td>
+                                <td>
+                                  String(12)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Account
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  product
+                                </td>
+                                <td>
+                                  String(5)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Account Giro Mpospay. Format : Number, 4
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  billNumber
+                                </td>
+                                <td>
+                                  String(1500)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Nomor pelanggan, nomor handphone atau nomor billing
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  trxId
+                                </td>
+                                <td>
+                                  String(8)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Nomor urut trasnaksi. Format : Number, 8
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  retrieval
+                                </td>
+                                <td>
+                                  String(17)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Waktu transaksi, format : yyyymmddhhiisszzz
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  sign
+                                </td>
+                                <td>
+                                  String(32)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Signature, MD5(type+account+institutionCode+product+billNumber+trxId+password+current_date+key)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  resultCode
+                                </td>
+                                <td>
+                                  String(3)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Kode respon dari web service. Format, Number 3
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  resultDesc
+                                </td>
+                                <td>
+                                  String(1000)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Keterangan respon dari web service
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  nominal
+                                </td>
+                                <td>
+                                  String(12)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Nominal tagihan, format Number : 12
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  admin
+                                </td>
+                                <td>
+                                  String(8)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Nominal bea admin B2B, format Number : 8
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  info1
+                                </td>
+                                <td>
+                                  String(1000)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Informasi Resi
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  info2
+                                </td>
+                                <td>
+                                  String(1000)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Informasi Konten Produk
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  info3
+                                </td>
+                                <td>
+                                  String(1000)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Informasi tambahan
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  jmlLembar
+                                </td>
+                                <td>
+                                  String(1)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Jumlah lembar transaksi
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  saldo
+                                </td>
+                                <td>
+                                  String(12)
+                                </td>
+                                <td>
+                                  Y
+                                </td>
+                                <td>
+                                  Jumlah sisa saldo, format Number : 12
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="tab4">
+                    <h3>
+                      Berikut daftar API Services B2B Messaging :
+                    </h3>
+                    <div class="box-tab">
+                      <div class="tabbable tabs-left">
+                        <ul class="nav nav-tabs">
+                          <li class="active">
+                            <a href="#tabs1" data-toggle="tab">                            <i class="black-icons info_about"></i>
+                            Inquiry
+</a>
+                          </li>
+                          <li>
+                            <a href="#tabs2" data-toggle="tab">                            <i class="black-icons v_card"></i>
+                            Payment
+</a>
+                          </li>
+                          <li>
+                            <a href="#tabs3" data-toggle="tab">                            <i class="black-icons link"></i>
+                            Purchase
+</a>
+                          </li>
+                          <li>
+                            <a href="#tabs4" data-toggle="tab">                            <i class="black-icons link_2"></i>
+                            Advice
+</a>
+                          </li>
+                          <li>
+                            <a href="#tabs5" data-toggle="tab">                            <i class="black-icons locked"></i>
+                            Balance Inquiry
+</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="tabs1">
+                            <blockquote class="quote_blue">
+                              <p>
+                                POST /finsbu/h2h
+                              </p>
+                            </blockquote>
+                            <h3>
+                              Request :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                POST http://103.123.39.238:7879/finsbu/h2h HTTP/1.1
+Authorization: Basic Base64(client_id:client_secret)
+Content-Type: application/json
+Origin: [yourdomain.com]
+
+{
+	&#34;type&#34;:&#34;inquiry&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;2042&#34;,
+	&#34;billNumber&#34;:&#34;AF085713323054&#34;,
+	&#34;trxId&#34;:&#34;00000001&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;sign&#34;:&#34;b3847e3a099979c1d96e3d186e0e05fa&#34;
+}
+                              </pre>
+                            </div>
+                            <h3>
+                              Response :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                {
+	&#34;type&#34;:&#34;inquiry&#34;,
+	&#34;service&#34;:&#34;responseInquiry&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;2042&#34;,
+	&#34;billNumber&#34;:&#34;AF085713323054&#34;,
+	&#34;resultCode&#34;:&#34;000&#34;,
+	&#34;resultDesc&#34;:&#34;SUKSES&#34;,
+	&#34;nominal&#34;:&#34;304000&#34;,
+	&#34;admin&#34;:&#34;1550&#34;,
+	&#34;trxId&#34;:&#34;00000001&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;paymentCode&#34;:&#34;21b555433f8de4b86144642d29d56839&#34;,
+	&#34;info1&#34;:&#34;Kode Bayar : AF085713323054|Kode Reff : 900017|ID Transaksi: TKP154821699|Nama: Eduard Budiharto|Desk.Order : Pembelian dari Tokopedia|Jml Tagihan : Rp.304.000|&#34;,
+	&#34;info2&#34;:&#34;TAGIHAN TOKOPEDIA|##1&#34;,
+	&#34;info3&#34;:&#34;&#34;,
+	&#34;jmlLembar&#34;:&#34;1&#34;,
+	&#34;saldo&#34;:&#34;&#34;,
+	&#34;signature&#34;:&#34;b3847e3a099979c1d96e3d186e0e05fa&#34;
+}
+                              </pre>
+                            </div>
+                          </div>
+                          <div class="tab-pane active" id="tabs2">
+                            <blockquote class="quote_blue">
+                              <p>
+                                POST /finsbu/h2h
+                              </p>
+                            </blockquote>
+                            <h3>
+                              Request :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                POST http://103.123.39.238:7879/finsbu/h2h HTTP/1.1
+Authorization: Basic Base64(client_id:client_secret)
+Content-Type: application/json
+Origin: [yourdomain.com]
+
+{
+	&#34;type&#34;:&#34;payment&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;2042&#34;,
+	&#34;billNumber&#34;:&#34;AF085713323054&#34;,
+	&#34;trxId&#34;:&#34;00000002&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;paymentCode&#34;:&#34;21b555433f8de4b86144642d29d56839&#34;,
+	&#34;sign&#34;:&#34;1a3a62586844e13ca9bb64d0056d7d7c&#34;
+}
+                              </pre>
+                            </div>
+                            <h3>
+                              Response :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                {
+	&#34;type&#34;:&#34;payment&#34;,
+	&#34;service&#34;:&#34;responsePayment&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;2042&#34;,
+	&#34;billNumber&#34;:&#34;AF085713323054&#34;,
+	&#34;resultCode&#34;:&#34;000&#34;,
+	&#34;resultDesc&#34;:&#34;SUKSES&#34;,
+	&#34;nominal&#34;:&#34;304000&#34;,
+	&#34;admin&#34;:&#34;1550&#34;,
+	&#34;trxId&#34;:&#34;00000001&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;paymentCode&#34;:&#34;21b555433f8de4b86144642d29d56839&#34;,
+	&#34;info1&#34;:&#34;Kode Bayar : AF085713323054|Kode Reff : 900017|ID Transaksi: TKP154821699|Nama: Eduard Budiharto|Desk.Order : Pembelian dari Tokopedia|Jml Tagihan : Rp.304.000|&#34;,
+	&#34;info2&#34;:&#34;TAGIHAN TOKOPEDIA|##1&#34;,
+	&#34;info3&#34;:&#34;&#34;,
+	&#34;jmlLembar&#34;:&#34;1&#34;,
+	&#34;saldo&#34;:&#34;11500000&#34;,
+	&#34;signature&#34;:&#34;1a3a62586844e13ca9bb64d0056d7d7c&#34;
+}
+                              </pre>
+                            </div>
+                          </div>
+                          <div class="tab-pane active" id="tabs3">
+                            <blockquote class="quote_blue">
+                              <p>
+                                POST /finsbu/h2h
+                              </p>
+                            </blockquote>
+                            <h3>
+                              Request :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                POST http://103.123.39.238:7879/finsbu/h2h HTTP/1.1
+Authorization: Basic Base64(client_id:client_secret)
+Content-Type: application/json
+Origin: [yourdomain.com]
+
+{
+	&#34;type&#34;:&#34;purchase&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;3100&#34;,
+	&#34;billNumber&#34;:&#34;08132259999&#34;,
+	&#34;trxId&#34;:&#34;00000004&#34;,
+	&#34;retrieval&#34;:&#34;20180222161223123&#34;,
+	&#34;sign&#34;:&#34;85afd2485c7f91177d006c51ff771f8c&#34;
+}
+                              </pre>
+                            </div>
+                            <h3>
+                              Response :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                {
+	&#34;type&#34;:&#34;purchase&#34;,
+	&#34;service&#34;:&#34;responsePayment&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;3100&#34;,
+	&#34;billNumber&#34;:&#34;08132259999&#34;,
+	&#34;resultCode&#34;:&#34;000&#34;,
+	&#34;resultDesc&#34;:&#34;SUKSES&#34;,
+	&#34;nominal&#34;:&#34;10050&#34;,
+	&#34;admin&#34;:&#34;0&#34;,
+	&#34;trxId&#34;:&#34;00000004&#34;,
+	&#34;retrieval&#34;:&#34;20180222161223123&#34;,
+	&#34;paymentCode&#34;:&#34;21b555433f8de4b86144642d29d56839&#34;,
+	&#34;info1&#34;:&#34;NO. HANDPHONE : 0081291887774|NILAI VOUCHER : 100000|NO.REF :0041002220476240|&#34;,
+	&#34;info2&#34;:&#34;PEMBELIAN PULSA TELKOMSEL|##Untukkeluhan Hub.133|Npwp TSEL:01.718.327.8.093.000&#34;,
+	&#34;info3&#34;:&#34;&#34;,
+	&#34;jmlLembar&#34;:&#34;1&#34;,
+	&#34;saldo&#34;:&#34;11500000&#34;,
+	&#34;signature&#34;:&#34;85afd2485c7f91177d006c51ff771f8c&#34;
+}
+                              </pre>
+                            </div>
+                          </div>
+                          <div class="tab-pane active" id="tabs4">
+                            <blockquote class="quote_blue">
+                              <p>
+                                POST /finsbu/h2h
+                              </p>
+                            </blockquote>
+                            <h3>
+                              Request :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                POST http://103.123.39.238:7879/finsbu/h2h HTTP/1.1
+Authorization: Basic Base64(client_id:client_secret)
+Content-Type: application/json
+Origin: [yourdomain.com]
+
+{
+	&#34;type&#34;:&#34;advice&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;2042&#34;,
+	&#34;billNumber&#34;:&#34;AF085713323054&#34;,
+	&#34;trxId&#34;:&#34;00000002&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;paymentCode&#34;:&#34;21b555433f8de4b86144642d29d56839&#34;,
+	&#34;sign&#34;:&#34;e88ab993f7a9ce1a9e2b78e15a485ccf&#34;
+}
+                              </pre>
+                            </div>
+                            <h3>
+                              Response :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                {
+	&#34;type&#34;:&#34;advice&#34;,
+	&#34;service&#34;:&#34;responsePayment&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;2042&#34;,
+	&#34;billNumber&#34;:&#34;AF085713323054&#34;,
+	&#34;resultCode&#34;:&#34;000&#34;,
+	&#34;resultDesc&#34;:&#34;SUKSES&#34;,
+	&#34;nominal&#34;:&#34;304000&#34;,
+	&#34;admin&#34;:&#34;1550&#34;,
+	&#34;trxId&#34;:&#34;00000001&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;paymentCode&#34;:&#34;21b555433f8de4b86144642d29d56839&#34;,
+	&#34;info1&#34;:&#34;Kode Bayar : AF085713323054|Kode Reff : 900017|ID Transaksi: TKP154821699|Nama : Eduard Budiharto|Desk.Order : Pembelian dari Tokopedia|Jml Tagihan : Rp.304.000|&#34;,
+	&#34;info2&#34;:&#34;TAGIHAN TOKOPEDIA|##1&#34;,
+	&#34;info3&#34;:&#34;&#34;,
+	&#34;jmlLembar&#34;:&#34;1&#34;,
+	&#34;saldo&#34;:&#34;11500000&#34;,
+	&#34;signature&#34;:&#34;e88ab993f7a9ce1a9e2b78e15a485ccf&#34;
+}
+                              </pre>
+                            </div>
+                          </div>
+                          <div class="tab-pane active" id="tabs5">
+                            <blockquote class="quote_blue">
+                              <p>
+                                POST /finsbu/h2h
+                              </p>
+                            </blockquote>
+                            <h3>
+                              Request :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                POST http://103.123.39.238:7879/finsbu/h2h HTTP/1.1
+Authorization: Basic Base64(client_id:client_secret)
+Content-Type: application/json
+Origin: [yourdomain.com]
+
+{
+	&#34;type&#34;:&#34;balanceInquiry&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;institutionCode&#34;:&#34;180309000002&#34;,
+	&#34;product&#34;:&#34;CBS&#34;,
+	&#34;billNumber&#34;:&#34;0000000018&#34;,
+	&#34;trxId&#34;:&#34;00000006&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;sign&#34;:&#34;2855d3b6a6eda783ab5a91b115b59186&#34;
+}
+                              </pre>
+                            </div>
+                            <h3>
+                              Response :
+                            </h3>
+                            <div class="code_syn">
+                              <pre class="prettyprint linenums">
+                                {
+	&#34;type&#34;:&#34;balanceInquiry&#34;,
+	&#34;service&#34;:&#34;responseBalanceInquiry&#34;,
+	&#34;accountType&#34;:&#34;B2B&#34;,
+	&#34;account&#34;:&#34;0000000018&#34;,
+	&#34;product&#34;:&#34;CBS&#34;,
+	&#34;billNumber&#34;:&#34;0000000018&#34;,
+	&#34;resultCode&#34;:&#34;00&#34;,
+	&#34;resultDesc&#34;:&#34;success&#34;,
+	&#34;nominal&#34;:&#34;0&#34;,
+	&#34;admin&#34;:&#34;0&#34;,
+	&#34;trxId&#34;:&#34;00000006&#34;,
+	&#34;retrieval&#34;:&#34;20180125003025879&#34;,
+	&#34;paymentCode&#34;:&#34;&#34;,
+	&#34;info1&#34;:&#34;Customer Name : WISNU|Product Code : WADIAH|Balance :2451000|&#34;,
+	&#34;info2&#34;:&#34;01000021&#34;,
+	&#34;info3&#34;:&#34;WISNU|WADIAH|2451000|&#34;,
+	&#34;jmlLembar&#34;:&#34;0&#34;,
+	&#34;saldo&#34;:&#34;2451000&#34;,
+	&#34;signature&#34;:&#34;2855d3b6a6eda783ab5a91b115b59186&#34;
+}
+                              </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="tab5">
+                    <h3>
+                      ErrorsAPI Fintech SBU Giro MPospay menggunakan skema error berikut :
+                    </h3>
+                    <div class="code_syn">
+                      <pre class="prettyprint linenums">
+                        { 
+	&#34;resultCode&#34;:&#34;00&#34;,
+	&#34;resultDesc&#34;:&#34;success&#34;
+}
+                      </pre>
+                    </div>
+                    <div class="widget-block">
+                      <div class="widget-head">
+                      </div>
+                      <div class="widget-content">
+                        <div class="widget-box">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Kode Respon
+                                </th>
+                                <th>
+                                  Pesan Respon
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  000
+                                </td>
+                                <td>
+                                  Sukses
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  301
+                                </td>
+                                <td>
+                                  Parameter kosong (tidak valid)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  102
+                                </td>
+                                <td>
+                                  Mohon maaf, System dalam maintenance. Mohon coba kembali 3 menit kedepan
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  103
+                                </td>
+                                <td>
+                                  Mohon maaf, Transaksi tidak bisa dilakukan di atas cutt of time
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  104
+                                </td>
+                                <td>
+                                  Kode Produk tidak valid
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  105
+                                </td>
+                                <td>
+                                  Mohon maaf, Transaksi tidak bisa dilakukan di atas cutt of time
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  106
+                                </td>
+                                <td>
+                                  Mandatory field tidak valid (tidak boleh kosong)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  107
+                                </td>
+                                <td>
+                                  Panjang trxId tidak valid
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  108
+                                </td>
+                                <td>
+                                  Content message dari database kosong
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  109
+                                </td>
+                                <td>
+                                  Gagal proses database
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  198
+                                </td>
+                                <td>
+                                  Gagal proses message
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  998
+                                </td>
+                                <td>
+                                  Mohon maaf, service B2B sedang maintenance
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  997
+                                </td>
+                                <td>
+                                  Parameter tidak valid
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                </td>
+                                <td>
+                                  Request Inquiry / Purchase
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  996
+                                </td>
+                                <td>
+                                  Kode institution tidak valid atau tidak ditemukan
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  995
+                                </td>
+                                <td>
+                                  Produk tidak valid atau tidak aktif
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  994
+                                </td>
+                                <td>
+                                  Signature is not match
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  993
+                                </td>
+                                <td>
+                                  Service (Produk) belum memiliki routing host
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  992
+                                </td>
+                                <td>
+                                  Account anda terblokir. Mohon hubungi adminstrator
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  991
+                                </td>
+                                <td>
+                                  Member belum memiliki harga referensi untuk produk ini
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                </td>
+                                <td>
+                                  Request Payment
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  996
+                                </td>
+                                <td>
+                                  paymentCode tidak ditemukan (reqPayment)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  995
+                                </td>
+                                <td>
+                                  paymentCode ini sudah di-payment. Lakukan cek status (reqPayment)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  994
+                                </td>
+                                <td>
+                                  Signature is not match (reqPay)
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  993
+                                </td>
+                                <td>
+                                  Service (Produk) belum memiliki routing host (reqPay)
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="tab6">
+                    <a id="btntab6" class="btn btn-inverse btn-large">                    <i class="color-icons monitor_co"></i>
+                    Load Daftar Produk
+</a>
+                    <br />
+                    <br />
+                    <div class="widget-content">
+                      <div class="widget-box">
+                        <form class="form-horizontal well ucase">
+                          <fieldset>
+                            <div class="control-group">
+                              <label class="control-label">
+                                Produk
+                              </label>
+                              <div class="controls">
+                                <select id="selectProduk" name="selectProduk" data-placeholder="Data Produk" style=" width:300px" class="chzn-select" tabindex="15">
+                                  <option value="">
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                    <div id="areatab6">
+                    </div>
+                    <div id="areatab6child">
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                  </div>
+                  <div class="tab-pane" id="tab7">
+                    <a id="btntab7" class="btn btn-inverse btn-large">                    <i class="color-icons monitor_co"></i>
+                    Load Daftar Produk
+</a>
+                    <br />
+                    <br />
+                    <div id="areatab7">
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="tab8">
+                    <h4>
+                      Files List
+                    </h4>
+                    <ul class="clip_icn">
+                      <li>
+                        <a href="https://fintech-sbx.posindonesia.co.id/assets/Doc/Documentasi Sandbox Fintech SBU Giro MPospay.pdf">                        Documentasi Sandbox Fintech SBU Giro MPospay.pdf
+</a>
+                      </li>
+                      <li>
+                        <a href="https://fintech-sbx.posindonesia.co.id/assets/Doc/Data pendukung untuk skenario transaksi abnormal.pdf">                        Data pendukung untuk skenario transaksi abnormal.pdf
+</a>
+                      </li>
+                      <li>
+                        <a href="https://fintech-sbx.posindonesia.co.id/assets/Doc/Daftar Produk dan pelanggan dengan Jumlah Lembar Lebih dari 1 Tagihan.pdf">                        Daftar Produk dan pelanggan dengan Jumlah Lembar Lebih dari 1 Tagihan.pdf
+</a>
+                      </li>
+                      <li>
+                        <a href="https://fintech-sbx.posindonesia.co.id/assets/Doc/Data pendukung untuk produk E-Wallet atau denominisasi.pdf">                        Data pendukung untuk produk E-Wallet atau denominisasi.pdf
+</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="tab9">
+                  </div>
+                  <div class="tab-pane" id="tab10">
+                    <div class="page-header">
+                      <h1>
+                        Development Test API
+                      </h1>
+                    </div>
+                    <div class="row-fluid">
+                      <div class="span5">
+                        <div class="widget-block">
+                          <div class="widget-head">
+                            <h5>
+                              DATA
+                            </h5>
+                          </div>
+                          <div class="widget-content">
+                            <div class="widget-box">
+                              <form autocomplete="off" class="form-horizontal well white-box">
+                                <fieldset>
+                                  <div class="control-group">
+                                    <label class="control-label">
+                                      Type
+                                    </label>
+                                    <div class="controls">
+                                      <select id="selectType" name="selectType" data-placeholder="Data Type" class="chzn-select">
+                                        <option value="inquiry">
+                                          inquiry
+                                        </option>
+                                        <option value="payment">
+                                          payment
+                                        </option>
+                                        <option value="purchase">
+                                          purchase
+                                        </option>
+                                        <option value="advice">
+                                          advice
+                                        </option>
+                                        <option value="balanceInquiry">
+                                          balanceInquiry
+                                        </option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="accountType">
+                                      accountType
+                                    </label>
+                                    <div class="controls">
+                                      <input type="text" class="input-large" id="accountType" name="accountType" value="B2B" />
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="account">
+                                      account
+                                    </label>
+                                    <div class="controls">
+                                      <input type="text" class="input-large" id="account" name="account" value="0000000018" />
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="institutionCode">
+                                      institutionCode
+                                    </label>
+                                    <div class="controls">
+                                      <input type="text" class="input-large" id="institutionCode" name="institutionCode" value="180309000002" />
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="product">
+                                      product
+                                    </label>
+                                    <div class="controls">
+                                      <input type="text" class="input-large" id="product" name="product" value="2042" />
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="billNumber">
+                                      billNumber
+                                    </label>
+                                    <div class="controls">
+                                      <input type="text" class="input-large" id="billNumber" name="billNumber" value="AF085713323054" />
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="trxId">
+                                      trxId
+                                    </label>
+                                    <div class="controls">
+                                      <input type="text" class="input-large" id="trxId" name="trxId" value="00000001" />
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="retrieval">
+                                      retrieval
+                                    </label>
+                                    <div class="controls">
+                                      <input type="text" class="input-large" id="retrieval" name="retrieval" value="20180125003025879" />
+                                    </div>
+                                  </div>
+                                  <div id="areaselectType">
+                                  </div>
+                                  <div class="form-actions">
+                                    <a id="btnPostDev" class="btn btn-inverse btn-large">                                    <i class="color-icons television_co"></i>
+                                    Post
+</a>
+                                  </div>
+                                </fieldset>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="span7">
+                        <div class="widget-block">
+                          <div class="widget-head">
+                            <h5>
+                              REQUEST
+                            </h5>
+                          </div>
+                          <div class="widget-content">
+                            <div class="widget-box">
+                              <div class="code_syn">
+                                <div id="areaRequest">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget-block">
+                          <div class="widget-head">
+                            <h5>
+                              RESPONSE
+                            </h5>
+                          </div>
+                          <div class="widget-content">
+                            <div class="widget-box">
+                              <div class="code_syn">
+                                <div id="areaRespon">
+                                  <div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div align="center" class="site-footer login-footer">
+          <div class="container">
+            <div class="copyright clearfix text-center">
+              <p>
+                @ Copyright 2018
+                <b>                PT Pos Indonesia (Persero)
+</b>
+                ,
+                <b>                SBU DIGITAL PLATFORM
+</b>
+                Development Teams
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- javascript
+		================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- Required header file -->
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/Jquery-3.6.0/jquery-3.6.0.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery-ui-1.14.0/jquery-ui.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/bootstrap.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/prettify.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.nicescroll.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.colorbox-min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/accordion.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/smart-wizard.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/vaidation.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/raty.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/jquery.noty.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/excanvas.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.dataTables.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/dataTables.buttons.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jszip.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/buttons.html5.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/chosen.jquery.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.mask.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/popper.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/custom-script.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/custom-script2.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/ios-orientationchange-fix.js">
+        </script>
+        <script type="text/javascript" src="https://fintech-sbx.posindonesia.co.id/assets/js/filemanager/data/file_uploads.js">
+        </script>
+        <script type="text/javascript" src="https://fintech-sbx.posindonesia.co.id/assets/js/filemanager/data/post_watermarkinput.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/md5.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/Jquery-3.6.0/jquery-3.6.0.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery-ui-1.14.0/jquery-ui.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/bootstrap.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/prettify.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.nicescroll.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.colorbox-min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/accordion.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/smart-wizard.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/vaidation.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/raty.jquery.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/jquery.noty.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/excanvas.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.dataTables.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/dataTables.buttons.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jszip.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/buttons.html5.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/chosen.jquery.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/jquery.mask.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/news/popper.min.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/custom-script.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/custom-script2.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/ios-orientationchange-fix.js">
+        </script>
+        <script type="text/javascript" src="https://fintech-sbx.posindonesia.co.id/assets/js/filemanager/data/file_uploads.js">
+        </script>
+        <script type="text/javascript" src="https://fintech-sbx.posindonesia.co.id/assets/js/filemanager/data/post_watermarkinput.js">
+        </script>
+        <script src="https://fintech-sbx.posindonesia.co.id/assets/js/md5.js">
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- javascript
+		================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Required header file -->
